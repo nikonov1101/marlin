@@ -1179,11 +1179,11 @@
  */
 
 #define XYZ_FULL_STEPS_PER_ROTATION 200 // nema 17: 360 / 1.8
-#define XYZ_MICROSTEPS 16
+#define XYZ_MICROSTEPS 32
 #define XYZ_BELT_PITCH 2
 #define XYZ_PULLEY_TEETH 20
 // TODO: WTF?
-#define EXTRUDER_STEPS_PER_UNIT 96 // rough calibration
+#define EXTRUDER_STEPS_PER_UNIT 204 // rough calibration
 
 
 #define DEFAULT_XYZ_STEPS_PER_UNIT ((XYZ_FULL_STEPS_PER_ROTATION) * (XYZ_MICROSTEPS) / double(XYZ_BELT_PITCH) / double(XYZ_PULLEY_TEETH))
@@ -2244,8 +2244,8 @@
 // Preheat Constants - Up to 10 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 215
-#define PREHEAT_1_TEMP_BED     80
+#define PREHEAT_1_TEMP_HOTEND 210
+#define PREHEAT_1_TEMP_BED     75
 #define PREHEAT_1_FAN_SPEED    0  // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
